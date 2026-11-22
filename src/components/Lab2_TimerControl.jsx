@@ -24,7 +24,7 @@ export default function Lab2TimerControl() {
 
   return (
     <div>
-      <p className="status">상태: {running ? 'Running' : 'Stopped'}</p>
+      <p className="status">상태: {running ? '실행 중' : '멈춤'}</p>
       <div className="count">{count}</div>
       <div className="controls">
         <button onClick={() => setRunning(true)} disabled={running}>Start</button>
